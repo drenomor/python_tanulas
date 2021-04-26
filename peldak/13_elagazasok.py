@@ -19,7 +19,6 @@ if eletkor < 18:
     print('Se cigi, se pia!')
 print(elvalaszto)
 
-eletkor = 14
 
 if eletkor < 18:
     print('Se cigi, se pia!')
