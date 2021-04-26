@@ -29,10 +29,14 @@ tartomany = range(10)
 print(list(tartomany))
 
 print(elvalaszto)
-gyumolcs =['datolya', 'körte', 'barack', 'málna', 'ribizli']
-print('gyumolcs lista',len(gyumolcs),'db elemet tartalmaz.')
+gyumolcs = ['datolya', 'körte', 'barack', 'málna', 'ribizli']
+print('A \'gyumolcs\' lista', len(gyumolcs), 'db elemet tartalmaz.')
 print(elvalaszto)
 
 for i in range(len(gyumolcs)):
     print(gyumolcs[i])
+print(elvalaszto)
+
+for i in gyumolcs:
+    print(i)
 print(elvalaszto)
