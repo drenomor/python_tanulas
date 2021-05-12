@@ -11,7 +11,7 @@ zoldsegek = ['krumpli', 'hagyma', 'karalábé', 'káposzta', 'uborka', 'répa', 
 
 def lista_printer(bemeneti_lista):
     for szamlalo in bemeneti_lista:
-        print(szamlalo)
+        print(szamlalo.upper())
 
 lista_printer(gyumolcsok)
 print()
