@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-gyumolcsok = ['papaya', 'ananász', 'gránátalma', 'pomelo', 'mandarin', 'málna', 'ribizli']
+gyumolcsok = ['papaya', 'ananász', 'gránátalma', 'pomelo', 'mandarin', 'málna', 'ribizli', 639]
 zoldsegek = ['krumpli', 'hagyma', 'karalábé', 'káposzta', 'uborka', 'répa', 'csicsóka']
 
 # for gyumolcs_szamlalo in gyumolcsok:
@@ -11,7 +11,8 @@ zoldsegek = ['krumpli', 'hagyma', 'karalábé', 'káposzta', 'uborka', 'répa', 
 
 def lista_printer(bemeneti_lista):
     for szamlalo in bemeneti_lista:
-        print(szamlalo.upper())
+        if isinstance(szamlalo, str): # megvizsgáljuk, hogy string-e a lista eleme
+            print(szamlalo.upper())
 
 lista_printer(gyumolcsok)
 print()
