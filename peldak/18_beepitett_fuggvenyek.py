@@ -5,7 +5,7 @@ def elvalaszto(szoveg = ''):
 
 
 # kiiratás
-elvalaszto('abszulult érték')
+elvalaszto('abszoulult érték')
 print(abs(-93))
 
 gyumolcsok = ['papaya', 'ananász', 'gránátalma', 'pomelo', 'mandarin', 'málna', 'ribizli']
