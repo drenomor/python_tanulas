@@ -53,3 +53,27 @@ print(pow(2, 6))
 
 elvalaszto('Tartomány')
 print(list(range(100)))
+
+elvalaszto('Tartomány')
+print(list(range(50, 100, 4)))
+
+elvalaszto('Fordított sorrend')
+print(list(reversed(gyumolcsok)))
+
+elvalaszto('Kerekítés')
+print(round(12.6))
+print(round(12.5))
+print(round(3.5325, 2))
+
+elvalaszto('Összegzés')
+numbers = [21,52,15,33,83]
+print(sum(numbers))
+
+elvalaszto('Típus meghatározás')
+print(type(10))
+print(type(2.3))
+print(type(5.6e-2))
+print(type(True))
+print(type('szöveg'))
+print(type(elvalaszto))
+print(type(gyumolcsok))
