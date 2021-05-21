@@ -4,7 +4,11 @@
 # 'w' = write (írás)
 # 'a' = append (hozzáfűzés)
 
-with open('peldak/out.txt', 'w', encoding='utf-8') as file:
-    szoveg = 'Számszeríjjal őrizd bűnös ékezeteidet!'
+with open('peldak/kozmondasok.txt', 'r', encoding='utf-8') as infile:
+    with open('peldak/out.txt', 'w', encoding='utf-8') as outfile:
+        
+        sor = infile.readline()
 
-    file.write(szoveg)
+        while sor:
+            outfile.write(sor)
+            sor = infile.readline()
