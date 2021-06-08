@@ -10,5 +10,5 @@ for key in nev_kor.keys():
 for value in nev_kor.values():
     print(value)
 
-for kely, value in nev_kor.items():
+for key, value in nev_kor.items():
     print(key, value)
