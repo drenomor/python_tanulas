@@ -17,3 +17,8 @@ hello()
 
 import sajat_modulok
 sajat_modulok.hello()
+print(sajat_modulok.szin)
+print(sajat_modulok.nevek)
+
+import Tester.sajat_modulok2
+Tester.sajat_modulok2.hello()
