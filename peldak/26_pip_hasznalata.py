@@ -16,3 +16,5 @@ plt.plot([1,2,3,4])
 plt.ylabel('Néhány szám')
 plt.xlabel('Néhány szám')
 plt.show()
+
+
