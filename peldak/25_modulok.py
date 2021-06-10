@@ -22,3 +22,30 @@ print(sajat_modulok.nevek)
 
 import Tester.sajat_modulok2
 Tester.sajat_modulok2.hello()
+
+import Tester.sajat_modulok2 as egyeni_elnevezes # egyéni aliast (álnevet) adhatunk az importált modulnak.
+egyeni_elnevezes.hello() # az alias nevével hivatkozhatunk rá.
+
+from sajat_modulok import Osztaly
+
+o = Osztaly()
+
+from sajat_modulok import hello
+"""
+Hiába importáljuk a "sajat_modulok"-ból a hello() fgv
+a következő sorban a fő modulban át definiáljuk azt
+így ezt hívjuk meg a hello()-val.
+"""
+
+def hello():
+    print('Üdvözlés a fő modulból!"')
+
+hello()
+
+"""
+Itt újból beimportáljuk a "sajat_modulok"-at
+és hivatkozunk a benne lévő hello() fgv-re.
+"""
+import sajat_modulok
+
+sajat_modulok.hello()
