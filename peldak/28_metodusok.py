@@ -23,10 +23,20 @@ class Szemely:
     def set_neme(self, value):
         self.neme = value
 
-sz1 = Szemely()
-sz1.set_kor(21)
-sz1.set_nev('Viktor')
-sz1.set_neme('férfi')
-print(sz1.kor)
-print(sz1.nev)
-print(sz1.neme)
+# object instance - objektum példány
+
+Viktor = Szemely()
+Viktor.set_kor(21)
+Viktor.set_nev('Viktor')
+Viktor.set_neme('férfi')
+print(Viktor.kor)
+print(Viktor.nev)
+print(Viktor.neme)
+
+Franciska = Szemely()
+Franciska.set_kor(38)
+Franciska.set_nev('Franciska')
+Franciska.set_neme('Nő')
+print(Franciska.kor)
+print(Franciska.nev)
+print(Franciska.neme)
