@@ -17,7 +17,7 @@ class Szemely:
     def set_kor(self, value):
         self.kor = value # a self.kor -ral már az objektumon tudjuk beállítani a lentebb beírt értéket
 
-    def set_nev(self, value):
+    def set_nev(self, value): # a self az éppen meghívott objektum példányra mutat pl. set_nev(Viktor, value) vagy set_kor(Franciska, value)
         self.nev = value
 
     def set_neme(self, value):
