@@ -16,6 +16,7 @@ class Szemely:
         self.neme = neme
         self.nemzetiseg = nemzetiseg
         self.vallas = vallas
+        self.hello() # minden egyes obejktum példánynál meghívódik a hello() metódus.
 
     def hello(self):
         print('Szia ' + self.nev)
@@ -27,8 +28,8 @@ Leonard = Szemely('Leonard', 33, 'férfi', 'Francia')
 print(Klea.vallas)
 print(Leonard.vallas)
 
-Klea.hello()
-Leonard.hello()
+#Klea.hello()
+#Leonard.hello()
 
 print(type(Klea))
 print(type(Leonard))
