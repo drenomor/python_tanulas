@@ -21,4 +21,21 @@ class Szemely:
     def hello(self):
         print('Szia ' + self.nev)
 
+class Alkalmazott(Szemely): # Az Alkalmazott örökli a Szemely összes tulajdonságát. A Szemely Super osztálya az Alkalmazottnak.
+    tapasztalat = 4
+    megbizhatosag = 8
+    vegzettseg = 'Könyvelő'
+
 # object instance - objektum példány
+
+Nandor = Alkalmazott('Nándor', 25, 'Férfi', 'Magyar', 'pogány')
+Erzsebet = Alkalmazott('Erzsebet', 36, 'Nő', 'Magyar', 'hindu')
+
+print(Nandor.nev)
+print(Nandor.vegzettseg)
+
+Erzsebet.vegzettseg = 'nano technológus'
+
+print(Erzsebet.nev)
+print(Erzsebet.vegzettseg)
+print(Erzsebet.vallas)
