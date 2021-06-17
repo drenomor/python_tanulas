@@ -18,3 +18,8 @@ else:
 
 if "kili" not in nevek_lista:
     print("Nincs találat")
+
+nevek_szotar = {'Dwalin': 532, 'Balin': 431, 'Kili': 832, 'Fili': 632, 'Dori': 325, 'Nori': 499, 'Ori': 321, 'Oin': 333, 'Gloin': 639, 'Bifur': 343, 'Bofur': 521, 'Bombur': 222, 'Thorin': 753}
+
+if 28 in nevek_szotar:
+    print("A lista tartalmazza a keresett nevet.")
