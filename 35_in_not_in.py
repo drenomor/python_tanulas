@@ -21,5 +21,20 @@ if "kili" not in nevek_lista:
 
 nevek_szotar = {'Dwalin': 532, 'Balin': 431, 'Kili': 832, 'Fili': 632, 'Dori': 325, 'Nori': 499, 'Ori': 321, 'Oin': 333, 'Gloin': 639, 'Bifur': 343, 'Bofur': 521, 'Bombur': 222, 'Thorin': 753}
 
-if 28 in nevek_szotar:
+if "Bilbo" in nevek_szotar:
     print("A lista tartalmazza a keresett nevet.")
+
+szamok1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+szamok2 = [0, 2, 4, 6, 8, 10]
+
+azonos_szamok = []
+egyedi_szamok = []
+
+for szam in szamok1:
+    if szam in szamok2:
+        azonos_szamok.append(szam)
+    else:
+        egyedi_szamok.append(szam)
+
+print("Ezek a számok benne vannak mindkét listában: ", azonos_szamok)
+print("Ezek a számok egyediek a \"szamok1\" listában: ", egyedi_szamok)
