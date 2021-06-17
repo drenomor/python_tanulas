@@ -11,4 +11,5 @@ with open("egyeb/Matild.txt", "r", encoding="utf-8") as in_file:
 
         sor = in_file.readline()
 
-    print(szoveg)
+    with open("egyeb/Klari.txt", "w", encoding="utf-8") as out_file:
+        out_file.write(szoveg)
