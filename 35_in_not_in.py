@@ -16,3 +16,5 @@ if "Ori" in nevek_lista:
 else:
     print("A lista nem tartalmazza a keresett nevet.")
 
+if "kili" not in nevek_lista:
+    print("Nincs találat")
