@@ -7,7 +7,7 @@ with open("egyeb/Matild.txt", "r", encoding="utf-8") as in_file:
     sor = in_file.readline()
 
     while sor:
-        szoveg += sor.lstrip().replace("Matild", "Klári")
+        szoveg += sor.lstrip().replace("Matild", "Klári").replace(", marha", "")
 
         sor = in_file.readline()
 
