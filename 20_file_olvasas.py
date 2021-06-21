@@ -6,7 +6,7 @@ def elvalaszto(szoveg = ''):
 elvalaszto('1')
 # fájl olvasás
 
-file = open('peldak/kozmondasok.txt', 'r', encoding='utf-8')
+file = open('kozmondasok.txt', 'r', encoding='utf-8')
 sor = file.readline()
 print(sor.strip())
 sor = file.readline()
@@ -22,7 +22,7 @@ file.close()
 
 elvalaszto('2')
 
-file2 = open('peldak/kozmondasok.txt', 'r', encoding='utf-8')
+file2 = open('kozmondasok.txt', 'r', encoding='utf-8')
 
 for sor in file2:
     print(sor.strip())
@@ -31,7 +31,7 @@ file2.close()
 
 elvalaszto('3')
 
-file3 = open('peldak/kozmondasok.txt', 'r', encoding='utf-8')
+file3 = open('kozmondasok.txt', 'r', encoding='utf-8')
 sor = file3.readline()
 
 while sor:
@@ -43,13 +43,13 @@ file3.close()
 elvalaszto('4')
 
 # Autómatikusan lezárja a file-t.
-with open('peldak/kozmondasok.txt', 'r', encoding='utf-8') as file4:
+with open('kozmondasok.txt', 'r', encoding='utf-8') as file4:
     for sor in file4:
         print(sor.strip())
 
 elvalaszto('5')
 
-with open('peldak/kozmondasok.txt', 'r', encoding='utf-8') as file5:
+with open('kozmondasok.txt', 'r', encoding='utf-8') as file5:
     #sor = file5.readline()
     sorok = file5.readlines()
     print(sorok)
@@ -60,6 +60,6 @@ with open('peldak/kozmondasok.txt', 'r', encoding='utf-8') as file5:
 
 elvalaszto('6')
 
-with open('peldak/kozmondasok.txt', 'r', encoding='utf-8') as file6:
+with open('kozmondasok.txt', 'r', encoding='utf-8') as file6:
     sor = file6.read() # Az egész szöveget beolvassa a fájlból. Több soros fájl (mondjuk kb több mint 5000 sor) esetén sok memóriát eszik. Ezért érdemesebb a readline()-t használni.
     print(sor)
